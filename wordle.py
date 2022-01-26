@@ -18,16 +18,7 @@ five_letter_words = {i: word_freq[i] for i in list(word_freq.keys()) if len(i) =
 
 
 
-g = '11ack'
-y = [[],[],[],[],[]]
-b = 'sorebl'
+g = '11111' # green letters (replace the 1 in the position with a letter if that letter is green)
+y = [[],[],[],[],[]] # yellow letters (each empty list can be filled with characters to satisfy the yellow letters for the position in the word)
+b = '' #black letters i.e letters that are not in the solution
 filter_words(five_letter_words, g, y, b)
-
-
-
-#from selenium.webdriver  import Firefox
-#browser = Firefox()
-#browser.get('https://www.powerlanguage.co.uk/wordle/')
-#exit = browser.find_element_by_xpath("/html/body/game-app")#overlay/content/close-icon")
-#print(exit)
-#browser.close()
